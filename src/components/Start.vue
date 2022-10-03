@@ -26,7 +26,6 @@ import { Photos } from '../types/photos';
   name: 'Start',
   components: {
     ButtonsWrapper,
-    currentPage: Object
   },
   props: {
     currentPage: Object
