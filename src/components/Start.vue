@@ -53,7 +53,7 @@ export default class Start extends Vue{
   clicked!: boolean;
   showPics!: () => void;
   hidePics!: () => void;
-  photos!: null | Photos
+  photos?: null | Photos
 }
 </script>
 
