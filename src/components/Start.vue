@@ -20,6 +20,7 @@
 import { Options, Vue } from 'vue-class-component';
 import ButtonsWrapper from './ButtonsWrapper.vue';
 import axios from 'axios';
+import { Photos } from '../types/photos';
 
 @Options({
   name: 'Start',
@@ -53,13 +54,7 @@ export default class Start extends Vue{
   clicked!: boolean;
   showPics!: () => void;
   hidePics!: () => void;
-  photos!: null | Array<{
-    albumId: number;
-    id: number;
-    thumbnailUrl: string;
-    title: string;
-    url: string;
-  }>
+  photos!: null | Photos
 }
 </script>
 
